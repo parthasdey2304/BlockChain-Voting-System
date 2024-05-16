@@ -3,7 +3,9 @@
   <img src="https://skillicons.dev/icons?i=html">
   <img src="https://skillicons.dev/icons?i=tailwind">
   <img src="https://skillicons.dev/icons?i=javascript">
+  <img src="https://skillicons.dev/icons?i=react">
   <img src="https://skillicons.dev/icons?i=python">
+  <img src="https://skillicons.dev/icons?i=flask">
   <img src="https://skillicons.dev/icons?i=bash">
 </div>
 <br>
