@@ -9,14 +9,18 @@ app = Flask(__name__)
 def submit_vote():
     data = request.json
     # Assuming you have a function to add the vote to the blockchain
-    blockchain.add_vote(data['name'], data['voter_id'], data['party'])
-    return jsonify({'message': 'Vote submitted successfully'})
+    # blockchain.add_vote(data['name'], data['voter_id'], data['party'])
+    response = jsonify({'message': 'Vote submitted successfully'})
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
+    return response
 
 # Route for fetching vote counts for each party
 @app.route('/vote-counts', methods=['GET'])
 def get_vote_counts():
     counts = blockchain.get_vote_counts()
-    return jsonify(counts)
+    response = jsonify(counts)
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
+    return response
 
 if __name__ == '__main__':
     app.run(debug=True)
