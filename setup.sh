@@ -12,7 +12,7 @@ fi
 
 # Installing pip dependencies
 cd ../server
-pip install flask blockchain Flask-CORS
+pip install flask Flask-CORS
 if [ $? -ne 0 ]; then
     echo -e "\e[31m[INFO] Failed to Install Dependencies\e[0m"
     exit 1
