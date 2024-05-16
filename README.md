@@ -6,6 +6,10 @@ This is a BlockChain based Voting System.
 ``` sh
 git clone https://github.com/parthasdey2304/BlockChain-Voting-System.git
 ```
++ Open the repository :
+```sh
+cd BlockChain-Voting-System
+```
 + Make the `setup.sh` file executable :
 ``` sh
 chmod +x setup.sh
