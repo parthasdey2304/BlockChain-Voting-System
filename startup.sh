@@ -1,7 +1,6 @@
 #!/bin/bash
 
 run_server() {
-    source server/.env/bin/activate
     python server/app.py &
 }
 

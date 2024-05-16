@@ -8,10 +8,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Creating a directory for the database
-os.system("mkdir databases")
-os.system("touch databases/votes.db")
+os.system("mkdir server/databases")
+os.system("touch server/databases/votes.db")
 # SQLite database initialization
-conn = sqlite3.connect('databases/votes.db')
+conn = sqlite3.connect('server/databases/votes.db')
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS votes
              (name TEXT, voter_id INTEGER, party TEXT)''')
@@ -34,7 +34,7 @@ def submit_vote():
     party = data.get('party')
 
     # Store vote data in the SQLite database
-    conn = sqlite3.connect('databases/votes.db')
+    conn = sqlite3.connect('server/databases/votes.db')
     c = conn.cursor()
     c.execute("INSERT INTO votes (name, voter_id, party) VALUES (?, ?, ?)", (name, voter_id, party))
     conn.commit()
