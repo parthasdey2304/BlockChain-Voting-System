@@ -31,11 +31,11 @@ const App = () => {
           </div>
 
           <div className='w-full flex justify-center items-center'>
-            <input type="text" value={ name } onChange={(e) => {setName(e.target.value)}} className='w-full px-4 py-3 rounded-xl text-xl' placeholder='Name' />
+            <input type="text" value={ name } onChange={(e) => {setName(e.target.value)}} className='w-full px-4 py-3 rounded-xl text-xl' placeholder='Name' required />
           </div>
 
           <div className='w-full flex justify-center items-center'>
-            <input type="number" value={ voterId } onChange={(e) => {setVoterId(e.target.value)}} className='w-full px-4 py-3 rounded-xl text-xl' placeholder='Voter ID' />
+            <input type="number" value={ voterId } onChange={(e) => {setVoterId(e.target.value)}} className='w-full px-4 py-3 rounded-xl text-xl' placeholder='Voter ID' required />
           </div>
 
           <div className='-mb-10'>
@@ -43,17 +43,17 @@ const App = () => {
 
             <div className='w-full h-[250px] flex-col space-y-2'>
               <div className='w-full h-[60px] px-4 py-2 bg-white/30 active:bg-blue-600 rounded-2xl flex space-x-2'>
-                <input type="radio" name='party' value="Party A" id='party_a' onChange={(e) => {setParty(e.target.value)}} className='h-full' />
+                <input type="radio" name='party' value="Party A" id='party_a' onChange={(e) => {setParty(e.target.value)}} className='h-full' required checked={false} />
                 <label for="party_a" className='text-white text-2xl  items-center pt-1.5 w-full'>Party A</label>
               </div>
 
               <div className='w-full h-[60px] px-4 py-2 bg-white/30 active:bg-blue-600 rounded-2xl flex space-x-2'>
-                <input type="radio" name='party' value="Party B" id='party_b' onChange={(e) => {setParty(e.target.value)}} className='h-full' />
+                <input type="radio" name='party' value="Party B" id='party_b' onChange={(e) => {setParty(e.target.value)}} className='h-full' required checked={false} />
                 <label for="party_b" className='text-white text-2xl  items-center pt-1.5 w-full'>Party B</label>
               </div>
 
               <div className='w-full h-[60px] px-4 py-2 bg-white/30 active:bg-blue-600 rounded-2xl flex space-x-2'>
-                <input type="radio" name='party' value="Party C" id='party_c' onChange={(e) => {setParty(e.target.value)}} className='h-full' />
+                <input type="radio" name='party' value="Party C" id='party_c' onChange={(e) => {setParty(e.target.value)}} className='h-full' required checked={false} />
                 <label for="party_c" className='text-white text-2xl  items-center pt-1.5 w-full'>Party C</label>
               </div>
             </div>
