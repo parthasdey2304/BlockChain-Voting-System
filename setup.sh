@@ -22,4 +22,5 @@ echo -e "\e[32m[INFO] Dependencies Installed!\e[0m"
 # Starting the Blockchain Server
 cd ..
 echo -e "\e[34m[INFO] Starting the Blockchain Server..\e[0m"
+chmod +x startup.sh
 ./startup.sh
