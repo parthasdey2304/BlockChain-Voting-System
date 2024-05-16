@@ -1,6 +1,6 @@
 # server.py
 from flask import Flask, request, jsonify
-import blockchain  # Assuming you have a module for blockchain operations
+import blockchain
 
 app = Flask(__name__)
 
