@@ -14,7 +14,6 @@ open_browser() {
     xdg-open "http://localhost:5173/"
 }
 
-# Run server-side and client-side apps in parallel
 run_server
 run_client
 
