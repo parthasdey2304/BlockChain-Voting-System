@@ -5,8 +5,7 @@ if [ $? -ne 0 ]; then
     echo -e "\e[31m[INFO] Failed to Install Dependencies\e[0m"
     exit 1
 fi
-cd ..
-cd server
+cd ../server
 pip install flask blockchain Flask-CORS
 if [ $? -ne 0 ]; then
     echo -e "\e[31m[INFO] Failed to Install Dependencies\e[0m"
