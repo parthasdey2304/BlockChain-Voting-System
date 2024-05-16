@@ -34,3 +34,6 @@ chmod +x setup.sh startup.sh
 ```
 ./startup.sh
 ```
+
+## Screenshots
+<img width="1280" alt="image" src="https://github.com/parthasdey2304/BlockChain-Voting-System/assets/131694386/c44b04ae-9099-4f50-8b9c-65275618c0ac">
