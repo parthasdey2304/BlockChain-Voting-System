@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# Function to run flask-api
 run_server() {
+    source server/.env/bin/activate
     python server/app.py &
 }
 
-# Function to run the react client app
 run_client() {
     cd client
     npm run dev &
 }
 
-# Function to open browser
 open_browser() {
     xdg-open "http://localhost:5173/"
 }
@@ -20,8 +18,6 @@ open_browser() {
 run_server
 run_client
 
-# Wait for a few seconds before opening the browser
 sleep 2
 
-# Open the browser
 open_browser
