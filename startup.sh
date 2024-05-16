@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Function to run server-side app
+# Function to run flask-api
 run_server() {
     python server/app.py &
 }
 
-# Function to run client-side app
+# Function to run the react client app
 run_client() {
     cd client
     npm run dev &
@@ -21,9 +21,7 @@ run_server
 run_client
 
 # Wait for a few seconds before opening the browser
-sleep 5
+sleep 2
 
 # Open the browser
 open_browser
-
-# End of script
