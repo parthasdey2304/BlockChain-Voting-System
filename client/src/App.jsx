@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const App = () => {
   const [name, setName] = useState('');
@@ -22,7 +23,8 @@ const App = () => {
 
   return (
     <div className='w-full h-screen flex justify-center items-center bg-gradient-to-tr from-blue-500 to-violet-700 p-2'>
-      <div className='w-[450px] h-[800px] bg-white/30 rounded-xl p-4 flex pt-24'>
+      <Link to="/dashboard" className='px-4 py-3 bg-white/30 rounded-xl absolute bottom-4 right-4 font-["Poppins"] text-white text-xl'>Dashboard</Link>
+      <div className='w-[450px] h-[700px] md:h-[800px] bg-white/30 rounded-xl p-4 flex pt-10 md:pt-24'>
         <form onSubmit={handleSubmit} className='w-full h-[500px] flex-col space-y-5 font-["Poppins"] px-4'>
           <div className='w-full flex justify-center items-center text-center font-medium text-white text-3xl mb-10'>
             BlockChain Voting System
