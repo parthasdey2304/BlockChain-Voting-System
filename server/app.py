@@ -1,4 +1,3 @@
-# Import necessary modules
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
@@ -8,9 +7,10 @@ import sqlite3
 app = Flask(__name__)
 CORS(app)
 
-# SQLite database initialization
+# Creating a directory for the database
 os.system("mkdir databases")
 os.system("touch databases/votes.db")
+# SQLite database initialization
 conn = sqlite3.connect('databases/votes.db')
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS votes
