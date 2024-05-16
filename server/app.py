@@ -51,7 +51,7 @@ def get_vote_counts():
         return response
     
     # Retrieve vote counts from the SQLite database
-    conn = sqlite3.connect('databases/votes.db')
+    conn = sqlite3.connect('server/databases/votes.db')
     c = conn.cursor()
     c.execute("SELECT party, COUNT(*) FROM votes GROUP BY party")
     vote_counts = dict(c.fetchall())
