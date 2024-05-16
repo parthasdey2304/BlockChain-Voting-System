@@ -20,6 +20,7 @@ chmod +x setup.sh
 ```
 
 ## Usage
+### Client Side
 + Open the terminal and navigate to the client folder : 
 ``` sh
 cd client
@@ -30,6 +31,7 @@ cd client
 npm run dev
 ```
 
+### Server Side
 + Open another terminal and navigate to the server folder : 
 ``` sh
 cd server
