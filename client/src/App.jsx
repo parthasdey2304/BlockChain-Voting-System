@@ -1,4 +1,3 @@
-// app.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -21,7 +20,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       <h1>Blockchain Voting System</h1>
       <form onSubmit={handleSubmit}>
         <label>
