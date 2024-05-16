@@ -10,7 +10,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/submit-vote', { name, voterId, party });
+      await axios.post('http://localhost:5000/submit-vote', { name, voterId, party });
       alert('Vote submitted successfully');
       setName('');
       setVoterId('');
